@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #BCE2C9;
+            margin: 0;
+        }
+        .header{
+            padding: 10px;
+            text-align: center;
+            background: white;
+            color: #36B87D;
+        }
+        .header h1{
+            font-size: 40px;
+        }
+        .header p{
+            font-size: 20px;
+        }
+        .nav{
+            display: flex;
+            background-color: #36B87D;
+        }
+        .nav a{
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover{
+            background-color: #BCE2C9;
+            color: white;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex-basis: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .main{
+            flex-basis: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        .newing{
+            background-color: #BCE2C9;
+            width: 100%;
+            padding: 20px;
+        }
+        .footer{
+            padding: 10px;
+            text-align: center;
+            background: white;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 600px){
+            .row,
+            .nav{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>This is my first webpage</h1>
+            <p>Knowledge - Experience - FAQ</p>
+            <p>Using <b>flexible</b> layout.</p>
+        </div>
+    </header>
+    <nav>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Technology</a>
+            <a href="#">Science</a>
+            <a href="#">Life</a>
+        </div>
+    </nav>
+    <aside>
+        <div class="row">
+            <div class="side">
+                <h2>Introduce</h2>
+                <div class="flex" style="height: 200px;">Image</div>
+                <p>Example.</p>
+                <h3>Technology</h3>
+                <div class="flex" style="height: 60px;">Image</div><br>
+                <div class="flex" style="height: 60px;">Image</div><br>
+                <div class="flex" style="height: 60px;">Image</div>
+                <h3>Follow me</h3>
+                <p>Facebook</p>
+                <p>YouTube</p>
+            </div>
+            <div class="main">
+                <h2>Form CSS</h2>
+                <h5>Example.</h5>
+                <div class="newing" style="height: 200px;">Image</div>
+                <p>Example.</p>
+                <p>Example.</p><br>
+                <h2>Attribute selector in CSS</h2>
+                <h5>Example.</h5>
+                <div class="newing" style="height: 200px;">Image</div>
+                <p>Example.</p>
+                <p>Example.</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer">
+            <h4>&copy; Copyright by author</h4>
+        </div>
+    </footer>
+</body>
+</html>
